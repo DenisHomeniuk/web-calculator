@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Web Calculator</title> 
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <!-- Головний контейнер для калькулятора -->
+    <div class="calculator">
+        <h1>Web Calculator</h1> <!-- Заголовок калькулятора -->
+
+        <!-- Форма для введення даних і виконання обчислень -->
+        <form method="POST"> <!-- Метод POST використовується для передачі даних на сервер -->
+            <!-- Поле для введення першого числа -->
+            <input type="number" name="num1" placeholder="Enter first number" required>
+            
+            <!-- Список вибору операції -->
+            <select name="operation">
+                <option value="add">+</option> <!-- Додавання -->
+                <option value="subtract">-</option> <!-- Віднімання -->
+                <option value="multiply">*</option> <!-- Множення -->
+                <option value="divide">/</option> <!-- Ділення -->
+            </select>
+
+            <!-- Поле для введення другого числа -->
+            <input type="number" name="num2" placeholder="Enter second number" required>
+
+            <!-- Кнопка для виконання обчислення -->
+            <button type="submit">Calculate</button>
+        </form>
+
+        <!-- Розділ для відображення результату -->
+        {% if result is not none %} <!-- Перевірка: якщо результат обчислення доступний -->
+        <div class="result">
+            <h2>Result: {{ result }}</h2> <!-- Виведення результату обчислення -->
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
