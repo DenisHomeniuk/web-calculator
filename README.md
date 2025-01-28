@@ -24,7 +24,7 @@ web-calculator/
 ```
 
 ## 🚀 Як запустити
-
+ 
 1. Клонуйте репозиторії:
 2. ```bash
    git clone https://github.com/DenisHomeniuk/web-calculator.git
