@@ -27,7 +27,7 @@ web-calculator/
 
 1. Клонуйте репозиторії:
 2. ```bash
-   git clone https://github.com/yourusername/web-calculator.git
+   git clone https://github.com/DenisHomeniuk/web-calculator.git
    cd web-calculator
    ```
 
